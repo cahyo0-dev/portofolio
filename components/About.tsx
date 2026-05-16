@@ -24,14 +24,14 @@ export default function About() {
       ref={ref}
       className="py-24 dark:bg-[#0D0D0D] bg-[#F7F6F3]"
     >
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           {/* Left: text */}
           <div>
             <p className="reveal text-xs font-mono text-[#00D4AA] tracking-widest uppercase mb-3">
               01. Tentang Saya
             </p>
-            <h2 className="reveal text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900 leading-tight mb-6">
+            <h2 className="reveal text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900 leading-tight mb-6">
               Membangun solusi
               <br />
               yang <span className="text-[#00D4AA]">nyata</span>.

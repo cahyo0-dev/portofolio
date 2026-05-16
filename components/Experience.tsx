@@ -58,10 +58,10 @@ export default function Experience() {
 
   return (
     <section id="experience" ref={ref} className="py-24 dark:bg-[#111] bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <p className="reveal text-xs font-mono text-[#00D4AA] tracking-widest uppercase mb-3">04. Pengalaman</p>
-          <h2 className="reveal text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900">Perjalanan</h2>
+          <h2 className="reveal text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900">Perjalanan</h2>
         </div>
 
         <div className="relative max-w-3xl mx-auto">

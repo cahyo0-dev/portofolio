@@ -99,10 +99,10 @@ export default function Projects() {
 
   return (
     <section id="projects" ref={ref} className="py-24 dark:bg-[#0D0D0D] bg-[#F7F6F3]">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
           <p className="reveal text-xs font-mono text-[#00D4AA] tracking-widest uppercase mb-3">03. Proyek</p>
-          <h2 className="reveal text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900">Yang Sudah Dibuat</h2>
+          <h2 className="reveal text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900">Yang Sudah Dibuat</h2>
           <p className="reveal text-sm dark:text-white/40 text-gray-400 mt-3 font-mono">Klik kartu untuk detail lengkap</p>
         </div>
 
