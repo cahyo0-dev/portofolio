@@ -1,76 +1,20 @@
 # Portfolio Nurcahyo Akbar
 
-Web portfolio pribadi dibuat dengan **Next.js 14**, **TypeScript**, dan **Tailwind CSS**. Dilengkapi dark/light mode toggle dan animasi scroll reveal.
+Personal portfolio — Next.js 14, TypeScript, Tailwind CSS.
 
-## Fitur
-- ✅ Dark mode & Light mode (toggle di navbar)
-- ✅ Animasi typewriter di hero section
-- ✅ Scroll reveal animation
-- ✅ Skill bar animasi
-- ✅ Responsive (mobile-friendly)
-- ✅ SEO-ready dengan metadata
-
-## Jalankan Lokal
+## Run locally
 
 ```bash
-# Install dependencies
 npm install
-
-# Development server
 npm run dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000)
+## Deploy
 
----
-
-## Deploy ke Vercel (GRATIS)
-
-### Cara 1 — Via GitHub (Direkomendasikan)
-
-1. **Push ke GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "first commit"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME/portfolio-nurcahyo.git
-   git push -u origin main
-   ```
-
-2. **Buka [vercel.com](https://vercel.com)** → Login dengan GitHub
-
-3. Klik **"Add New Project"** → Import repo portfolio kamu
-
-4. Klik **Deploy** → Selesai! ✅
-
-Vercel otomatis detect Next.js, tidak perlu konfigurasi apapun.
-
-### Cara 2 — Via Vercel CLI
+Push ke GitHub, lalu connect ke [vercel.com](https://vercel.com). Otomatis deploy.
 
 ```bash
-npm i -g vercel
-vercel login
-vercel
+git init && git add . && git commit -m "init"
+git remote add origin https://github.com/USERNAME/REPO.git
+git push -u origin main
 ```
-
----
-
-## Kustomisasi
-
-Edit file ini sesuai kebutuhan:
-
-| File | Isi |
-|------|-----|
-| `components/Hero.tsx` | Nama, bio, link GitHub |
-| `components/Projects.tsx` | Daftar proyek & deskripsi |
-| `components/Skills.tsx` | Skill dan persentase |
-| `components/Experience.tsx` | Pengalaman kerja/magang |
-| `components/Contact.tsx` | Email, WhatsApp, sosmed |
-| `app/layout.tsx` | Title & meta description SEO |
-
-## Domain Gratis dari Vercel
-
-Setelah deploy, kamu dapat domain gratis: `namaproject.vercel.app`
-
-Untuk custom domain sendiri, bisa beli di Niagahoster/Namecheap lalu connect di Settings Vercel.

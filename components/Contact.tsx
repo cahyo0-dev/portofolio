@@ -62,7 +62,7 @@ export default function Contact() {
     <section id="contact" ref={ref} className="py-24 dark:bg-[#0D0D0D] bg-[#F7F6F3]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
-          <p className="reveal text-xs font-mono text-[#00D4AA] tracking-widest uppercase mb-3">05. Kontak</p>
+          <p className="reveal text-xs font-mono text-[#00D4AA] tracking-widest uppercase mb-3">06. Kontak</p>
           <h2 className="reveal text-3xl sm:text-4xl md:text-5xl font-extrabold dark:text-white text-gray-900">
             Mari Terhubung
           </h2>

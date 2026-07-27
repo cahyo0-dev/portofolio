@@ -8,6 +8,7 @@ const navLinks = [
   { href: "#skills", label: "Keahlian" },
   { href: "#projects", label: "Proyek" },
   { href: "#experience", label: "Pengalaman" },
+  { href: "#certifications", label: "Sertifikat" },
   { href: "#contact", label: "Kontak" },
 ];
 
