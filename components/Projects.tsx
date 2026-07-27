@@ -141,37 +141,39 @@ function ImageCarousel({ images, title }: { images: string[]; title: string }) {
   };
 
   return (
-    <div className="relative w-full bg-black rounded-t-xl overflow-hidden" style={{ aspectRatio: "16/9" }}>
-      {/* Images */}
-      <div
-        className="flex h-full transition-transform duration-300 ease-in-out"
-        style={{ transform: `translateX(-${current * 100}%)`, width: `${images.length * 100}%` }}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
-      >
-        {images.map((src, i) => (
-          <div key={i} className="relative flex-shrink-0" style={{ width: `${100 / images.length}%` }}>
-            {!errored[i] ? (
-              <img
-                src={src}
-                alt={`${title} - ${i + 1}`}
-                className={`w-full h-full object-contain transition-opacity duration-300 ${loaded[i] ? "opacity-100" : "opacity-0"}`}
-                onLoad={() => setLoaded((p) => ({ ...p, [i]: true }))}
-                onError={() => setErrored((p) => ({ ...p, [i]: true }))}
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center bg-gray-900 text-gray-500 text-xs font-mono">
-                gambar {i + 1}
-              </div>
-            )}
-            {!loaded[i] && !errored[i] && (
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-900">
-                <div className="w-6 h-6 border-2 border-[#00D4AA] border-t-transparent rounded-full animate-spin" />
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+    <div
+      className="relative w-full bg-gray-100 dark:bg-gray-900 rounded-t-xl overflow-hidden"
+      style={{ aspectRatio: "16/9" }}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+    >
+      {/* Images — stacked, show only current */}
+      {images.map((src, i) => (
+        <div
+          key={i}
+          className="absolute inset-0 transition-opacity duration-300"
+          style={{ opacity: i === current ? 1 : 0, pointerEvents: i === current ? "auto" : "none" }}
+        >
+          {!errored[i] ? (
+            <img
+              src={src}
+              alt={`${title} - ${i + 1}`}
+              className="w-full h-full object-contain"
+              onLoad={() => setLoaded((p) => ({ ...p, [i]: true }))}
+              onError={() => setErrored((p) => ({ ...p, [i]: true }))}
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-gray-400 text-xs font-mono">
+              gambar {i + 1}
+            </div>
+          )}
+          {!loaded[i] && !errored[i] && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-6 h-6 border-2 border-[#00D4AA] border-t-transparent rounded-full animate-spin" />
+            </div>
+          )}
+        </div>
+      ))}
 
       {/* Nav arrows — only if more than 1 image */}
       {images.length > 1 && (

@@ -38,8 +38,7 @@ const timeline = [
     points: [
       "Membangun Platform E-Commerce Parfum (full-stack: katalog, cart, checkout, database relasional)",
       "Mengembangkan Sistem Monitoring Suhu Ruangan berbasis IoT (DHT11 + mikrokontroler)",
-      "Membangun Sistem Monitoring Air Tangki berbasis IoT (ESP8266 + sensor ultrasonik)",
-      "Mengembangkan Sistem Penggajian Karyawan dengan Laravel (CRUD, laporan PDF, role-based access)",
+      "Mengembangkan Sistem Presensi Digital & Absensi Karyawan dengan Laravel dan MySQL",
     ],
   },
 ];

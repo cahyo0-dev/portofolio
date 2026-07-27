@@ -110,9 +110,7 @@ export default function Contact() {
       {/* Footer */}
       <div className="mt-20 pt-8 border-t dark:border-white/10 border-gray-200 text-center">
         <p className="text-xs font-mono dark:text-white/30 text-gray-400">
-          © 2025{" "}
-          <span className="text-[#00D4AA]">Nurcahyo Akbar</span>
-          {" "}· Built with Next.js & Tailwind CSS · Hosted on Vercel
+          © 2026 <span className="text-[#00D4AA]">Nurcahyo Akbar</span>
         </p>
       </div>
     </section>
